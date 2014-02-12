@@ -1,0 +1,33 @@
+﻿Build started 1/31/2014 2:16:51 AM.
+     1>Project "D:\Projects\NDIS 6.0 Filter Driver\C++\ndislwf.vcxproj" on node 2 (Rebuild target(s)).
+     1>StampInf:
+         C:\Program Files\Windows Kits\8.1\bin\x86\stampinf.exe -d "*" -a "amd64" -v "*" -k "1.11" -u "1.11.0" -f x64\Win7Release\netlwf.inf 
+         Stamping x64\Win7Release\netlwf.inf [Version] section with DriverVer=01/31/2014,2.16.51.423
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Ix64\Win7Release\ /I.. /I. /Zi /nologo /W4 /WX /Ox /Os /Oy- /D _WIN64 /D _AMD64_ /D AMD64 /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D NDIS620=1 /D NDIS_WDM=1 /D NDISLWF=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Yc"precomp.h" /Fp"x64\Win7Release\\precomp.h.pch" /Fo"x64\Win7Release\\" /Fd"x64\Win7Release\vc120.pdb" /Gz /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /wd4201 /wd4214 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /errorReport:prompt /kernel -cbstring -d2epilogunwind  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ precompsrc.c
+         precompsrc.c
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Ix64\Win7Release\ /I.. /I. /Zi /nologo /W4 /WX /Ox /Os /Oy- /D _WIN64 /D _AMD64_ /D AMD64 /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D NDIS620=1 /D NDIS_WDM=1 /D NDISLWF=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Yu"precomp.h" /Fp"x64\Win7Release\\precomp.h.pch" /Fo"x64\Win7Release\\" /Fd"x64\Win7Release\vc120.pdb" /Gz /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /wd4201 /wd4214 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /errorReport:prompt /kernel -cbstring -d2epilogunwind  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ device.c filter.c flt_dbg.c
+         device.c
+         filter.c
+         flt_dbg.c
+         Generating Code...
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Ix64\Win7Release\ /I.. /I. /Zi /nologo /W4 /WX /Ox /Os /Oy- /D _WIN64 /D _AMD64_ /D AMD64 /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D NDIS620=1 /D NDIS_WDM=1 /D NDISLWF=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"x64\Win7Release\\" /Fd"x64\Win7Release\vc120.pdb" /Gz /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /wd4201 /wd4214 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /errorReport:prompt /kernel -cbstring -d2epilogunwind  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ flowtable.c iocontrol.c
+         flowtable.c
+         iocontrol.c
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files\Windows Kits\8.1\bin\x86\rc.exe /D _WIN64 /D _AMD64_=1 /D AMD64 /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D "SMP_ID=\\\"{47A52D61-9E9E-4FEA-9033-C1434C5F8870}\\\"" /D NDIS620=1 /D NDIS_WDM=1 /D NDISLWF=1 /l"0x0409" /I"C:\Program Files\Windows Kits\8.1\Include\UM" /Ix64\Win7Release\ /I.. /I. /nologo /fo"x64\Win7Release\filter.res" filter.rc 
+       Link:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"x64\Win7Release\ndislwf.sys" /VERSION:"6.3" /INCREMENTAL:NO /NOLOGO /WX /SECTION:"INIT,d" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x64\BufferOverflowK.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x64\ntoskrnl.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x64\hal.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x64\wmilib.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x64\ndis.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"x64\Win7Release\ndislwf.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"GsDriverEntry" /RELEASE /IMPLIB:"x64\Win7Release\ndislwf.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X64 /PROFILE /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 /osversion:6.3 /pdbcompress /debugtype:pdata x64\Win7Release\filter.res
+         x64\Win7Release\device.obj
+         x64\Win7Release\filter.obj
+         x64\Win7Release\flowtable.obj
+         x64\Win7Release\flt_dbg.obj
+         x64\Win7Release\iocontrol.obj
+         x64\Win7Release\precompsrc.obj
+         ndislwf.vcxproj -> D:\Projects\NDIS 6.0 Filter Driver\C++\x64\Win7Release\ndislwf.sys
+     1>Done Building Project "D:\Projects\NDIS 6.0 Filter Driver\C++\ndislwf.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.85

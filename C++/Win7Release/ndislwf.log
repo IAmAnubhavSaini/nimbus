@@ -1,0 +1,31 @@
+﻿Build started 1/12/2014 10:42:53 PM.
+     1>Project "D:\Projects\NDIS 6.0 Filter Driver\C++\ndislwf.vcxproj" on node 3 (Build target(s)).
+     1>StampInf:
+         C:\Program Files\Windows Kits\8.1\bin\x86\stampinf.exe -d "*" -a "x86" -v "*" -k "1.11" -u "1.11.0" -f Win7Release\netlwf.inf 
+         Stamping Win7Release\netlwf.inf [Version] section with DriverVer=01/12/2014,22.42.56.598
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IWin7Release\ /I.. /I. /Zi /nologo /W4 /WX /Ox /Os /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D NDIS620=1 /D NDIS_WDM=1 /D NDISLWF=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Yc"precomp.h" /Fp"Win7Release\\precomp.h.pch" /Fo"Win7Release\\" /Fd"Win7Release\vc120.pdb" /Gz /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /wd4201 /wd4214 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt /kernel -cbstring  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ precompsrc.c
+         precompsrc.c
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IWin7Release\ /I.. /I. /Zi /nologo /W4 /WX /Ox /Os /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D NDIS620=1 /D NDIS_WDM=1 /D NDISLWF=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Yu"precomp.h" /Fp"Win7Release\\precomp.h.pch" /Fo"Win7Release\\" /Fd"Win7Release\vc120.pdb" /Gz /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /wd4201 /wd4214 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt /kernel -cbstring  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ device.c filter.c flt_dbg.c
+         device.c
+         filter.c
+         flt_dbg.c
+         Generating Code...
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IWin7Release\ /I.. /I. /Zi /nologo /W4 /WX /Ox /Os /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D NDIS620=1 /D NDIS_WDM=1 /D NDISLWF=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"Win7Release\\" /Fd"Win7Release\vc120.pdb" /Gz /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /wd4201 /wd4214 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt /kernel -cbstring  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ flowtable.c iocontrol.c
+         flowtable.c
+         iocontrol.c
+         Generating Code...
+       Link:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Win7Release\ndislwf.sys" /VERSION:"6.3" /INCREMENTAL:NO /NOLOGO /WX /SECTION:"INIT,d" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\memcmp.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\BufferOverflowK.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\ntoskrnl.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\hal.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\wmilib.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\ndis.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"Win7Release\ndislwf.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"GsDriverEntry@8" /RELEASE /IMPLIB:"Win7Release\ndislwf.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X86 /PROFILE /SAFESEH /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 /osversion:6.3 /pdbcompress /debugtype:pdata Win7Release\filter.res
+         Win7Release\device.obj
+         Win7Release\filter.obj
+         Win7Release\flowtable.obj
+         Win7Release\flt_dbg.obj
+         Win7Release\iocontrol.obj
+         Win7Release\precompsrc.obj
+         ndislwf.vcxproj -> D:\Projects\NDIS 6.0 Filter Driver\C++\Win7Release\ndislwf.sys
+     1>Done Building Project "D:\Projects\NDIS 6.0 Filter Driver\C++\ndislwf.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.00
